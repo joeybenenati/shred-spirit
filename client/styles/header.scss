@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+.intro-header {
+  background-color: #808080;
+  background: url(/timessquare.jpg) no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+}
+
+.site-heading {
+  font-family: 'Righteous'
+}
+
+.intro-header .site-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading {
+    padding: 150px 0;
+  }
+}
+.intro-header .site-heading {
+  text-align: center;
+}
+.intro-header .site-heading h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 80px;
+  }
+}
