@@ -1,0 +1,12 @@
+@import 'variables';
+
+.btn {
+  border: none;
+  border-radius: 2px;
+  color: white;
+}
+
+.btn-red {
+  background-color: $lightred;
+  color: white;
+}
