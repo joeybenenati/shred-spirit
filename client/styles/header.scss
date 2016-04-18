@@ -6,8 +6,9 @@
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
+  /*background-size: cover;*/
   -o-background-size: cover;
+  max-height: 300px;
   /*margin-bottom: 50px;*/
 }
 
@@ -16,12 +17,12 @@
 }
 
 .intro-header .site-heading {
-  padding: 100px 0 50px;
+  padding: 75px 0 50px;
   color: white;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .intro-header .site-heading {
@@ -37,3 +38,5 @@
     font-size: 80px;
   }
 }
+
+
