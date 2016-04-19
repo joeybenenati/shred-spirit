@@ -12,7 +12,7 @@ export default class Welcome extends Component {
           <h1>Welcome!</h1>
           <p>Our mission is to help everyone become their best self, physically, spiritually, and emotionally. We combine the best of cutting edge diet and exercise information with holistic and spiritual practices to focus on the whole package, not just one aspect. Join us and leverage our cutting edge tools and information to help you along your path to achieving your goals.</p>
           <Link className='btn-red btn btn-lg' role='button' to="/login">Login</Link>
-          {/*<Link className='btn-red btn btn-lg' role='button' to="/signup">Sign Up</Link>*/}
+          <Link className='btn-red btn btn-lg' role='button' to="/signup">Sign Up</Link>
         </div>
       </div>
     )
