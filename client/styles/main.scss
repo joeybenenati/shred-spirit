@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 @import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
 html, body, #app { 
   height: 100%; 
@@ -9,13 +10,10 @@ html, body, #app {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
-.brand {
-  font-family: 'Righteous';
-}
 /* CSS declarations go here */
 /*body {
   font-family: sans-serif;
