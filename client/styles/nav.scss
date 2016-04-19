@@ -1,9 +1,19 @@
+.navbar-brand {
+  float: right;
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 10px;
+}
+
 .navbar {
   border: none;
   border-radius: 0px;
   margin: 0;
 }
 
+/*
 .navbar-collapse.collapse {
 display: block!important;
 }
@@ -18,4 +28,4 @@ margin-right: -15px !important;
 
 .navbar-right {
 float: right!important;
-}
+}*/
