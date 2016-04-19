@@ -1,14 +1,13 @@
 import React, { Component, PropTypes } from 'react';
-import Welcome from './welcome/Welcome.jsx'
 import { Meteor } from 'meteor/meteor'
 
-export default class App extends Component {
-  
+export default Dashboard = React.createClass({
+
   render() {
     return (
       <div>
-        {this.props.children}
+        <h1>Dashboard</h1>
       </div>
     )
   }
-}
+})

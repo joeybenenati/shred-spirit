@@ -18,7 +18,3 @@ export default class Header extends Component {
     )
   }
 }
-          // <ButtonToolbar className='pull-right'>
-          //   <Button className='btn-header' href="">Login</Button>
-          //   <Button className='btn-header' href="">Join</Button>
-          // </ButtonToolbar>

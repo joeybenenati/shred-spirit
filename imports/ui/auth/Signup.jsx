@@ -39,7 +39,7 @@ export default Signup = React.createClass({
         console.log('ERROR: ', err)
         this.setState({signupError: err})
       } else {
-        this.props.history.push('/user/'+ Meteor.userId());
+        this.props.history.push('/user');
       }
     })
   },
@@ -54,12 +54,14 @@ export default Signup = React.createClass({
             <h1>Sign Up</h1>
             <p>{this.state.signupError}</p>
             <p>{this.state.passwordConf}</p>
-            <Input type="text" onChange={this.handleChange} value={this.state.firstName} placeholder="First Name" name="firstName"/>
-            <Input type="text" onChange={this.handleChange} value={this.state.lastName} placeholder="Last Name" name="lastName"/>
-            <Input type="email" onChange={this.handleChange} value={this.state.email} placeholder="Email" name="email"/>
-            <Input type="password" onChange={this.handleChange} value={this.state.password} placeholder="Password" name="password" />
-            <Input type="password" onChange={this.handleChange} value={this.state.passwordConf} placeholder=" Confirm Password" name="passwordConf" />
-            <Button  block onClick={this.handleSubmit} >Sign Up</Button>
+            <form>
+              <Input type="text" onChange={this.handleChange} value={this.state.firstName} placeholder="First Name" name="firstName"/>
+              <Input type="text" onChange={this.handleChange} value={this.state.lastName} placeholder="Last Name" name="lastName"/>
+              <Input type="email" onChange={this.handleChange} value={this.state.email} placeholder="Email" name="email"/>
+              <Input type="password" onChange={this.handleChange} value={this.state.password} placeholder="Password" name="password" />
+              <Input type="password" onChange={this.handleChange} value={this.state.passwordConf} placeholder=" Confirm Password" name="passwordConf" />
+              <Button  type='submit' block onClick={this.handleSubmit} >Sign Up</Button>
+            </form>
         </div>
       </div>
     )

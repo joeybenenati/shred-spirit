@@ -25,7 +25,7 @@ export default Login = React.createClass({
         console.log('ERROR: ', err)
         this.setState({authError: 'Incorrect email or password'})
       } else {
-        this.props.history.push('/user/'+ Meteor.userId());
+        this.props.history.push('/user');
       }
     })
   },
@@ -39,9 +39,11 @@ export default Login = React.createClass({
         <div className="login-block">
             <h1>Login</h1>
             <p>{this.state.authError}</p>
-            <Input type="email" onChange={this.handleChange} value={this.state.email} placeholder="Email" name="email" refs='email'/>
-            <Input type="password" onChange={this.handleChange} value={this.state.password} placeholder="Password" name="password" refs='password' />
-            <Button  block onClick={this.handleSubmit} >Login</Button>
+            <form>
+              <Input type="email" onChange={this.handleChange} value={this.state.email} placeholder="Email" name="email" refs='email'/>
+              <Input type="password" onChange={this.handleChange} value={this.state.password} placeholder="Password" name="password" refs='password' />
+              <Button  type='submit' block onClick={this.handleSubmit} >Login</Button>
+            </form>
         </div>
       </div>
     )

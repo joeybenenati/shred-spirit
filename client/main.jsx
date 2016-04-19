@@ -8,8 +8,9 @@ import App_old from '../imports/ui/App_old.jsx';
 import App from '../imports/ui/App.jsx';
 import Welcome from '../imports/ui/welcome/Welcome.jsx';
 import Login from '../imports/ui/auth/Login.jsx';
-import Signup from '../imports/ui/auth/Signup.jsx'
-import User from '../imports/ui/user/User.jsx'
+import Signup from '../imports/ui/auth/Signup.jsx';
+import User from '../imports/ui/user/User.jsx';
+import Dashboard from '../imports/ui/user/Dashboard.jsx';
  
 Meteor.startup(() => {
   render((
@@ -18,7 +19,12 @@ Meteor.startup(() => {
         <IndexRoute component={Welcome}/>
         <Route path="login" component={Login}/>
         <Route path="signup" component={Signup}/>
-        <Route path="user/:id" component={User}/>
+        <Route path="/user" component={User}>
+          <Route path="/user/dashboard" component={Dashboard}/>
+          {/*<Route path="measurements" component={BodyMeasurements}/>
+          <Route path="exercise-log" component={ExerciseLog}/>
+          <Route path="exercise-list" component={ExerciseList}/>*/}
+        </Route>
       </Route>
     </Router>
   ), document.getElementById('app'))
